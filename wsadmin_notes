@@ -1,0 +1,12 @@
+List apps:
+
+print AdminApp.list()
+
+List commands:
+
+print AdminTask.help('-commands')
+
+Invoke offline:
+
+./wsadmin.sh -lang jython -conntype none
+

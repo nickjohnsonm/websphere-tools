@@ -1,0 +1,84 @@
+[wasadmin@localhost bin]$ ./wsadmin.sh
+WASX7023E: Error creating "SOAP" connection to host "localhost"; exception information: com.ibm.websphere.management.exception.ConnectorNotAvailableException: [SOAPException: faultCode=SOAP-ENV:Protocol; msg=; targetException=java.net.MalformedURLException]
+WASX7213I: This scripting client is not connected to a server process; please refer to the log file /opt/IBM/WebSphere/AppServer/profiles/jobmgr01/logs/wsadmin.traceout for additional information.
+WASX8011W: AdminTask object is not available.
+tmsProfile.py: Importing necessary packages...
+tmsProfile.py: Importing necessary packages...Done
+tmsProfile.py: Initializing global variables...
+tmsProfile.py: Initializing global variables...Done
+tmsProfile.py: Loading XpathUtil...
+tmsProfile.py: Loading XpathUtil...Done
+tmsProfile.py: Loading Port...
+tmsProfile.py: Loading Port...Done
+tmsProfile.py: Loading Profile...
+tmsProfile.py: Loading Profile...Done
+tmsProfile.py: Loading ProfileRegistry...
+tmsProfile.py: Loading ProfileRegistry...Done
+tmsProfile.py: Loading getWasPorts function...
+tmsProfile.py: Loading getWasPorts function...Done
+WASX7031I: For help, enter: "print Help.help()"
+wsadmin>printWasPorts()
+Profile         Node            Server                Port  Name
+=======         ====            ======                ====  ====
+jobmgr01        jobmgr_node     jobmgr                9808  BOOTSTRAP_ADDRESS
+jobmgr01        jobmgr_node     jobmgr                8876  SOAP_CONNECTOR_ADDRESS
+jobmgr01        jobmgr_node     jobmgr                9631  IPC_CONNECTOR_ADDRESS
+jobmgr01        jobmgr_node     jobmgr                9420  SAS_SSL_SERVERAUTH_LISTENER_ADDRESS
+jobmgr01        jobmgr_node     jobmgr                9419  CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS
+jobmgr01        jobmgr_node     jobmgr                9421  CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS
+jobmgr01        jobmgr_node     jobmgr                9960  WC_adminhost
+jobmgr01        jobmgr_node     jobmgr                9943  WC_adminhost_secure
+jobmgr01        jobmgr_node     jobmgr                9099  ORB_LISTENER_ADDRESS
+dmgr01          node02_node     nodeagent             2813  BOOTSTRAP_ADDRESS
+dmgr01          node02_node     nodeagent             9904  ORB_LISTENER_ADDRESS
+dmgr01          node02_node     nodeagent             9205  CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS
+dmgr01          node02_node     nodeagent             9206  CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS
+dmgr01          node02_node     nodeagent             9361  DCS_UNICAST_ADDRESS
+dmgr01          node02_node     nodeagent             7274  NODE_DISCOVERY_ADDRESS
+dmgr01          node02_node     nodeagent             5004  NODE_IPV6_MULTICAST_DISCOVERY_ADDRESS
+dmgr01          node02_node     nodeagent             5005  NODE_MULTICAST_DISCOVERY_ADDRESS
+dmgr01          node02_node     nodeagent             9905  SAS_SSL_SERVERAUTH_LISTENER_ADDRESS
+dmgr01          node02_node     nodeagent             8887  SOAP_CONNECTOR_ADDRESS
+dmgr01          node02_node     nodeagent             9639  IPC_CONNECTOR_ADDRESS
+dmgr01          dmgr_node       dmgr                  7282  CELL_DISCOVERY_ADDRESS
+dmgr01          dmgr_node       dmgr                  9813  BOOTSTRAP_ADDRESS
+dmgr01          dmgr_node       dmgr                  9638  IPC_CONNECTOR_ADDRESS
+dmgr01          dmgr_node       dmgr                  8886  SOAP_CONNECTOR_ADDRESS
+dmgr01          dmgr_node       dmgr                  9106  ORB_LISTENER_ADDRESS
+dmgr01          dmgr_node       dmgr                  9423  SAS_SSL_SERVERAUTH_LISTENER_ADDRESS
+dmgr01          dmgr_node       dmgr                  9424  CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS
+dmgr01          dmgr_node       dmgr                  9422  CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS
+dmgr01          dmgr_node       dmgr                  9066  WC_adminhost
+dmgr01          dmgr_node       dmgr                  9049  WC_adminhost_secure
+dmgr01          dmgr_node       dmgr                  9360  DCS_UNICAST_ADDRESS
+dmgr01          dmgr_node       dmgr                  5557  DataPowerMgr_inbound_secure
+dmgr01          node01_node     nodeagent             2814  BOOTSTRAP_ADDRESS
+dmgr01          node01_node     nodeagent             9906  ORB_LISTENER_ADDRESS
+dmgr01          node01_node     nodeagent             9207  CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS
+dmgr01          node01_node     nodeagent             9208  CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS
+dmgr01          node01_node     nodeagent             9362  DCS_UNICAST_ADDRESS
+dmgr01          node01_node     nodeagent             7275  NODE_DISCOVERY_ADDRESS
+dmgr01          node01_node     nodeagent             5006  NODE_IPV6_MULTICAST_DISCOVERY_ADDRESS
+dmgr01          node01_node     nodeagent             5007  NODE_MULTICAST_DISCOVERY_ADDRESS
+dmgr01          node01_node     nodeagent             9907  SAS_SSL_SERVERAUTH_LISTENER_ADDRESS
+dmgr01          node01_node     nodeagent             8888  SOAP_CONNECTOR_ADDRESS
+dmgr01          node01_node     nodeagent             9640  IPC_CONNECTOR_ADDRESS
+appsrv09        node09          server09              2815  BOOTSTRAP_ADDRESS
+appsrv09        node09          server09              8889  SOAP_CONNECTOR_ADDRESS
+appsrv09        node09          server09              9107  ORB_LISTENER_ADDRESS
+appsrv09        node09          server09              9427  SAS_SSL_SERVERAUTH_LISTENER_ADDRESS
+appsrv09        node09          server09              9426  CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS
+appsrv09        node09          server09              9425  CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS
+appsrv09        node09          server09              9067  WC_adminhost
+appsrv09        node09          server09              9084  WC_defaulthost
+appsrv09        node09          server09              9363  DCS_UNICAST_ADDRESS
+appsrv09        node09          server09              9050  WC_adminhost_secure
+appsrv09        node09          server09              9447  WC_defaulthost_secure
+appsrv09        node09          server09              5069  SIP_DEFAULTHOST
+appsrv09        node09          server09              5068  SIP_DEFAULTHOST_SECURE
+appsrv09        node09          server09              7283  SIB_ENDPOINT_ADDRESS
+appsrv09        node09          server09              7290  SIB_ENDPOINT_SECURE_ADDRESS
+appsrv09        node09          server09              5562  SIB_MQ_ENDPOINT_ADDRESS
+appsrv09        node09          server09              5582  SIB_MQ_ENDPOINT_SECURE_ADDRESS
+appsrv09        node09          server09              9641  IPC_CONNECTOR_ADDRESS
+wsadmin>

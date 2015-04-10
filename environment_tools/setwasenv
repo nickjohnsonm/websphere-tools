@@ -1,0 +1,20 @@
+#!/bin/bash
+# simple environment script for selecting a specific environment
+
+
+PS3='Pick environment '
+#environments=$(grep WAS_ENV ~/env/*.env |awk -F \= '{print $2}')
+#export PS1='$(hostname):$(pwd) $: '
+alias ll="ls -ltr"
+export PS1='\[\e[1;34m\]PH: $(echo $DMGR_HOME)    \[\e[1;30m\]\n\[\e[1;34m\]$PWD\n\[\e[0;31m\]\u@\h>\[\e[0m\]';
+
+
+select CONFIG in $(grep WAS_ENV ~/env/*.env |awk -F \= '{print $2}')
+
+do
+
+. ./$CONFIG.env
+
+break
+
+done
